@@ -1,0 +1,196 @@
+/* 
+Color Palette header and footer
+dark blue : #06113C
+orange : #FF8C32
+light grey : #DDDDDD
+ligher grey : #EEEEEE
+*/
+
+/* Nasa Font */
+@import url('http://fonts.cdnfonts.com/css/nasa');
+
+/* Heading Font (Josefin Sans) */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+/* Non Heading font (Source Sans Font)*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+p, label , input, button, textarea{
+    font-size: 25px;
+    font-family: "Source Sans Font", sans-serif;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.nav {
+    padding: 10px 5%;
+    align-items: center;
+    background-color: #06113C;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+
+#logo {
+    text-decoration: none;
+}
+
+.nav a h1{
+    font-family: 'Nasa', sans-serif;
+    font-size: 60px;
+    text-align: right;
+    color: #DDDDDD;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.garis {
+    display: block;
+    left: 20px;
+    height: 3px;
+    width: 40px;
+    margin: 10px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #F0E7DD;
+}
+
+.menu{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0 3px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #DDDDDD;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+
+.menu li a:hover {
+    color: #EEEEEE;
+}
+
+main {
+    top: 75px;
+}
+
+.bar {
+    margin: auto;
+    width: 90%;
+    background-color: #FF8C32;
+    height: 3px;
+}
+
+.upper_foot {
+    justify-content: space-between;
+    padding: 25px 25%;
+    background-color: #EEEEEE;
+    display: flex;
+    text-align: center;
+}
+
+.foot_links ul, .socials ul {
+    margin-bottom: 3px;  
+    list-style: none;
+}
+
+.foot_links li, .socials li{
+    margin: 20px;
+}
+
+.foot_links ul li a, .socials ul li a{
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.lower_foot {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #DDDDDD;
+}
+
+.lower_foot p{
+    font-size: 15px;
+}
+
+@media(max-width:960px){
+    .burger{
+        display: block;
+    }
+
+    .burger.open .garis:nth-child(2){
+        opacity: 0;
+    }
+
+    .burger.open .garis:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger.open .garis:nth-child(3){
+        transform: translateY(-18px) rotate(-45deg);
+    }
+
+    .menu{
+        position: fixed;
+        right: 200%;
+        top: 75px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #FF8C32;
+        width: 100%;
+        text-align: right;
+        transition: 0.4s;
+    }
+
+    .menu li {
+        margin: 22px 0;
+    }
+
+    .menu li a{
+        color: #000000;
+        font-size: 25px;
+    }
+
+    .menu.open {
+        right: 0;
+    }
+}

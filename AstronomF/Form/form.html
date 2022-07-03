@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronom</title>
+    <link rel="stylesheet" href="../mainstyle.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a id="logo" href="../Home/homepage.html"><h1>Astronom</h1></a>
+            <div class="burger">
+                <div class="garis"></div>
+                <div class="garis"></div>
+                <div class="garis"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="../Home/homepage.html">Home</a></li>
+                <li><a href="../AboutUs/about.html">About Us</a></li>
+                <li><a href="../Form/form.html">Report</a></li>
+            </ul>
+        </div>
+        <div class="bar"></div>
+        <script src="../main.js"></script>
+    </header>
+    
+    <main>
+        <div class="part1">
+            <h2>Have a Problem?</h2>
+            <p>If you found a problem on our website (such as a bug) or want to complain or perhaps even suggest us something, you could simply fill out this report form down bellow.</p>
+        </div>
+        <form action="form2.html" method="GET">
+            <div class="tipe">
+                <label for="tipe">What do you want to report on?</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="tipe" id="tipe" required>
+                        <label for="tipe">Bug</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="tipe" id="tipe" required>
+                        <label for="tipe">Content</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pg_choice">
+                <label for="pg_choice">On what page is the issue located?</label>
+                <ul required>
+                    <li>
+                        <input type="checkbox" name="pg_choice" id="pg_choice">
+                        <label for="tipe">Home Page</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pg_choice" id="pg_choice">
+                        <label for="tipe">About us Page</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pg_choice" id="pg_choice">
+                        <label for="tipe">Report Page</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="num">
+                <label for="num">
+                    How many issues are there?
+                    <input type="number" min="1" required>
+                </label>
+            </div>
+
+            <div class="report">
+                <textarea name="report" id="report" placeholder="Enter your report" required></textarea>
+            </div>
+            
+            <div class="rst">
+                <button type="reset">Clear All</button>
+            </div>
+            
+            <div class="sbmt">
+                <input id="submit" type="submit">
+            </div>
+            
+        </form>
+    </main>
+
+    <footer>
+        <div class="bar"></div>
+        <div class="upper_foot">
+            <div class="socials">
+                <ul>
+                    <li><a href="https://www.instagram.com/nasahubble/?hl=en" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/elonmusk/" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/c/inanutshell" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="foot_links">
+                <ul>
+                    <li><a href="../Home/homepage.html">Home</a></li>
+                    <li><a href="../AboutUs/about.html">About Us</a></li>
+                    <li><a href="../Form/form.html">Report</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower_foot">
+            <p>© 2022 Astronom</p>
+        </div>
+    </footer>
+</body>
+</html>

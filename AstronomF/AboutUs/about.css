@@ -1,0 +1,69 @@
+/* 
+Content Color Palette 
+Dark Blue : #161853
+Lighter dark Blue : #292C6D
+light white : #FAEDF0
+*/
+
+main {
+    display: flex;
+    padding: 5%;
+    padding-top: 200px;
+    background-color: #161853;
+    gap: 5%;
+    width: 100%;
+}
+
+main img {
+    object-fit: cover;
+    height: 800px;
+    width: 650px;
+}
+
+.container {
+    border-radius: 20px;
+    padding-top: 30px;
+    background-color: #292C6D;
+    border: black solid 5px;
+    color: #FAEDF0;
+    gap: 100px;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.strip {
+    position: relative;
+    background-color: #FF8C32;
+    margin: 50px 0;
+    height: 3px;
+    width: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container p {
+    left: 5%;
+    position: relative;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 90%;
+}
+
+@media(max-width:1452px){
+    main {
+        flex-direction: column;
+    }
+
+    main img {
+        align-self: center;
+        padding-bottom: 50px;
+        height: 650px;
+        width: 800px;
+    }
+
+    .container p{
+        text-align: center;
+    }
+}
